@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #f2f0ef;
+  --color-surface: #ffffff;
+  --color-edge: #dcd7d3;
+  /* Amber reads fine as a fill, but it is too light for text on off-white.
+     accent-ink is the readable version for labels and links. */
+  --color-accent: #f59e0b;
+  --color-accent-ink: #92400e;
+}
+
+html {
+  background: var(--color-paper);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: #000;
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+/* iOS zooms the page when a focused input is under 16px. */
+input,
+textarea {
+  font-size: 16px;
+}
+
+textarea {
+  field-sizing: content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
