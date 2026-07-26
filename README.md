@@ -1,4 +1,4 @@
-# Origin Story · Avatar
+# Avatar
 
 _by Ken Tjandra_
 
